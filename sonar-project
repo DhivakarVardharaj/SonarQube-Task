@@ -1,0 +1,7 @@
+sonar.projectKey=SonarQube-Task
+sonar.projectName=SonarQube Task
+sonar.projectVersion=1.0
+sonar.sources=.
+sonar.inclusions=app.js
+sonar.sourceEncoding=UTF-8
+sonar.host.url=http://localhost:9000

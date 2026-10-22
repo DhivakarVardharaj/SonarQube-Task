@@ -1,0 +1,17 @@
+# SonarScanner installation archive
+sonar-scanner-cli-*.zip
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
