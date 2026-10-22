@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                echo 'Checking out SonarQube Assessment project from GitHub'
+                echo 'Checking out project from GitHub'
                 checkout scm
             }
         }
@@ -20,7 +20,7 @@ pipeline {
             steps {
                 withSonarQubeEnv('SonarQube-Server') {
                     sh '''
-                        sonar-scanner \
+                        /opt/sonar-scanner/bin/sonar-scanner \
                             -Dsonar.projectKey=SonarQube-Task \
                             -Dsonar.projectName="SonarQube Task" \
                             -Dsonar.sources=. \
